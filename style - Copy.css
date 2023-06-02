@@ -1,0 +1,1115 @@
+
+/*---------------------------------------
+# General
+---------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*-------------------------------
+  BODY
+  --------------------------------*/
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: dark whitesmoke;
+    color: black;
+  }
+  
+  /*---------------------------------------
+  #NAVBAR
+  ---------------------------------------*/
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(25, 28, 31, 0.8);
+    padding: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+    
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 0 22px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    color: hotpink;
+  }
+  
+  .menu li a.active {
+    color: hotpink;
+  }
+  
+  
+  /*---------------------------------------
+  # HOME SECTION
+  ---------------------------------------*/
+  
+  .home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('images/hheader.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+  }
+  
+  /*---------------------------------------
+  # TEXT - STROKE
+  ---------------------------------------*/
+  .text-stroke {
+    color: dark whitesmoke;
+    -webkit-text-stroke: 1px hotpink; /* For Webkit-based browsers */
+    text-stroke: 1px hotpink;
+  }
+  
+  
+  h6 {
+    color: white; /* Set the text color */
+    -webkit-text-stroke: 1px black; /* Add text stroke for WebKit browsers */
+    text-stroke: 2px dark whitesmoke; /* Add text stroke for other browsers */
+  }
+  
+  .scroll-down-button {
+    /* Add your button styles here */
+    color: white ;
+    -webkit-text-stroke: 2px hotpink; /* For Webkit-based browsers */
+    text-stroke: 2px hotpink;
+  }
+  
+  /*---------------------------------------
+  # HOME-CONTENT
+  ---------------------------------------*/
+  
+  .home-content {
+    margin-bottom: 20px;
+    color: dark whitesmoke;
+  }
+  
+  .home-content h1 {
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 3px;
+   color: whitesmoke;
+    font-family: 'Oleo Script', cursive;
+  }
+  
+  .home-content h6 {
+    font-size: 17px;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+   
+   /*---------------------------------------
+  # SCROLL-DOWN
+  ---------------------------------------*/
+                                   
+  .scroll-down-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+  }
+  
+  .scroll-down-button i {
+    animation: dancing 1s infinite;
+  }
+  
+  @keyframes dancing {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+    
+  
+  /*---------------------------------------
+  # SECTION-STYLE
+  ---------------------------------------*/
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .section:nth-child(odd) {
+    background-color: #f4f4f4;
+  }
+  
+  .section:nth-child(even) {
+    background-color: #fff;
+  }
+  
+
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  #home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+  /*----------------------------------------------------
+  # About Me
+  -----------------------------------------------------*/
+  
+  
+  
+  .section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:  #555555;
+  }
+  
+  .section-title p {
+    font-size: 18px;
+    color: #888;
+    line-height: 26px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  b{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  #about {
+    background-color: dark whitesmoke;
+    padding: 120px 0;
+  }
+                            
+  #about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #about .section-title {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  
+  #about .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  #about .section-title p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  
+  /*---------------------------------------
+  # ANIMATED-SKILL BAR
+  ---------------------------------------*/
+  .skills-content .row {
+    margin-bottom: 20px;
+  }
+  
+  .skills-content .row .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  
+  .skills-content .info-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-content .info-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-content .info-list li i {
+    margin-right: 5px;
+  }
+  
+  .skills-content .info-list li strong {
+    margin-right: 5px;
+  }
+  
+  #about .col-lg-6 {
+    flex: 0 0 50%;
+  }
+  
+  #about .image-container img {
+    max-width: 100%;
+    
+    display: block;
+   
+  }
+  
+  #about .skills-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #about .skills-content ul li {
+    margin-bottom: 15px;
+  }
+  
+  #about .skills-content ul li span {
+    font-weight: bold;
+  }
+  
+  .skills-content {
+    margin-top: 20px;
+  }
+  
+  .progress {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar-wrap {
+    background-color: wheat;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: hotpink;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  
+  .val {
+    font-weight: bold;
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 0;
+    }
+  }
+  
+  .progress-bar-wrap.active .progress-bar {
+    animation: progressAnimation 1s ease-in-out;
+  }
+  
+                                                                                                                                                                       
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+
+
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #about .row {
+    flex-direction: column;
+  }
+
+  #about .col-lg-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about .skills-content {
+    margin-left: 0;
+  }
+
+  #about .skills-content .progress {
+    margin-bottom: 10px;
+  }
+
+  #about .skills-content .progress .skill {
+    margin-bottom: 5px;
+  }
+
+  #about .skills-content .progress .val {
+    float: right;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+  
+  /*-------------------------------------------
+  # My Resume
+  ---------------------------------------------*/
+  
+  #resume {
+    background-color: dark whitesmoke;
+    padding: 100px 0;
+  }
+  
+  .section-title h2{
+    font-size: 40px;
+    color:  #555555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+   
+  }
+  
+  .section-title p{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  
+  .resume .resume-item {
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 2px solid #82909c;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: palevioletred;
+    margin-bottom: 18px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 18px;
+    background: #eef0f2;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #82909c;
+  }
+  
+  .resume .container .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resume .container .col-lg-6 {
+    flex-basis: 48%; /* Adjust as needed */
+  }
+  
+  
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #resume {
+    /* Mobile-specific styles */
+    padding: 20px;
+  }
+
+  #resume .section-title h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #resume .resume-item {
+    margin-bottom: 20px;
+  }
+
+  #resume .resume-item h4,
+  #resume .resume-item h5,
+  #resume .resume-item p {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #resume .resume-item ul {
+    padding-left: 0;
+  }
+
+  #resume .resume-item ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+
+  #resume .resume-item details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #resume .resume-item details div {
+    margin-left: 15px;
+  }
+}
+
+
+
+
+
+
+
+  /*---------------------------------------
+  # SERVICES  ---------------------------------------*/
+     
+  
+#services {
+  background-color: dark whitesmoke;
+  padding: 100px 0;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 40px;
+    color:  #555555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 80px;
+}
+
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+ 
+}
+
+.service-item {
+  flex: 0 0 25%;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.service-item i {
+  border-radius: 50%;
+  background-color: pink;
+  color: hotpink;
+ font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: light black;
+  margin-bottom: 20px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #services {
+    /* Mobile-specific styles */
+    padding: 20px;
+  }
+
+  #services .services-title h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #services .service-item {
+    text-align: center;
+  }
+
+  #services .service-item i {
+    font-size: 30px;
+  }
+
+  #services .service-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  #services .service-item p {
+    font-size: 14px;
+  }
+}
+
+
+
+ /*------------------------------------------===============================================-----------------------------------
+  # CONTACT --------------=============================================================------------------------*/
+     
+     
+     #contact {
+        background-color: dark whitesmoke;
+        padding: 100px 0;
+      }
+      
+      
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 80px;
+      }
+      
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      
+      .contact-section {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .contact-info {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+     
+      
+      .contact-info ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      
+      .contact-info li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      
+      .contact-info i {
+        margin-right: 10px;
+      }
+      
+      .contact-info .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+
+
+      .contact-info strong {
+        color: hotpink; /* Replace with your desired color */
+      }
+      
+
+      .contact-info li strong {
+        margin-right: 10px;
+      }
+      
+
+
+
+      .contact-info .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: hotpink;
+        transition: color 0.3s;
+      }
+      
+      .contact-info .social-icons a i {
+        
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid plum;
+          text-align: center;
+          line-height: 40px;
+          margin-right: 10px;
+      }
+
+      .contact-info .social-icons a i:hover {
+        background-color: palevioletred;
+        color: #fff;
+      }
+      
+      .contact-form {
+        flex: 1;
+        background-color: wheat;
+        padding: 20px;
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.10);
+      }
+      
+      .contact-form h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .contact-form textarea {
+        height: 120px;
+      }
+      
+      .contact-form button {
+        background-color: hotpink;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .contact-form button:hover {
+        background-color: hotpink;
+      }
+      
+  
+      .contact-info {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        margin-right: 20px;
+      }
+      
+      .contact-form {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        margin-left: 20px;
+      }
+      
+
+/* Styles for larger screens */
+
+
+ 
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #contact {
+    /* Mobile-specific styles */
+    padding: 20px;
+  }
+
+  #contact .section-title h2 {
+    font-size: 24px;
+  }
+
+  #contact .contact-section {
+    flex-direction: column;
+  }
+
+  #contact .contact-info {
+    margin-bottom: 20px;
+  }
+
+  #contact .contact-info ul li {
+    font-size: 14px;
+  }
+
+  #contact .contact-form input[type="text"],
+  #contact .contact-form input[type="email"],
+  #contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #contact .contact-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #footer h3 {
+    font-size: 18px;
+  }
+
+  #footer p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    margin-right: 10px;
+  }
+
+  .credits {
+    font-size: 12px;
+  }
+
+  .scroll-up-button {
+    /* Mobile-specific styles */
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+  }
+}
+
+
+      
+
+
+
+
+
+      
+     
+      
+      
+      /*---------------------------------------
+      # FOOTER
+    --------------------------------------*/
+       
+      #footer {
+        background: url("images/footerimg.png") top center no-repeat;
+        background-size: cover;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding: 80px 0;
+        position: relative;
+        
+      }
+      
+      #footer::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      
+      #footer .container {
+        position: relative;
+      }
+      
+      #footer h3 {
+        font-size: 38px;
+        font-weight: 700;
+        color: #fff;
+        position: relative;
+        font-family: "Satisfy", serif;
+        padding: 0;
+        margin: 0 0 15px 0;
+        font-family: 'Oleo Script', cursive;
+      }
+      
+      #footer p {
+        font-size: 15px;
+        font-style: italic;
+        padding: 0;
+        margin: 0 0 40px 0;
+      }
+      
+      #footer .social-links {
+        margin: 0 0 40px 0;
+      }
+      
+      #footer .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: hotpink;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+      }
+      
+      #footer .social-links a:hover {
+        background: hotpink;
+        color: white;
+        text-decoration: none;
+      }
+      
+      #footer .copyright {
+        margin: 0 0 5px 0;
+      }
+      
+      #footer .credits {
+        font-size: 13px;
+      }
+      
+
+
+      /* Styles for larger screens */
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #footer {
+    /* Mobile-specific styles */
+    text-align: center;
+  }
+
+  #footer h3 {
+    font-size: 18px;
+  }
+
+  #footer p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    margin-right: 10px;
+  }
+
+  .credits {
+    font-size: 12px;
+  }
+}
+
+        /*---------------------------------------
+             # SCROLL-UP
+       ---------------------------------------*/
+  
+       
+       .scroll-up-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: hotpink;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        color: #000000;
+        font-size: 20px;
+        text-decoration: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      
+      .scroll-up-button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .scroll-up-button:hover {
+        background-color: aqua;
+      }
+      
+      
+  
+  #msg{
+    color: hotpink;
+   
+    display: block;
+  }
+      
+      
+  
+  /*---------------------------------------
+  # MOBILE MEDIA QUERY
+  ---------------------------------------*/
+  
+  
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .scroll-up-button {
+    display: none;
+  }
+}
